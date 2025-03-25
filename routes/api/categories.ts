@@ -34,7 +34,7 @@ const CategoryData = [
 ];
 
 export const handler: Handlers = {
-  GET(_req, ctx: any) {
+  GET(_req, _ctx) {
     try {
       const categories = CategoryData;
 

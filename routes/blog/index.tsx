@@ -1,4 +1,4 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
+import { Handlers, PageProps, FreshContext } from "$fresh/server.ts";
 import BlogIsland from "../../islands/BlogIsland.tsx";
 
 const CategoryData = [
