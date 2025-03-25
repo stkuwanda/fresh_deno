@@ -9,7 +9,7 @@ import * as $blog_index from "./routes/blog/index.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $products from "./routes/products.tsx";
-import * as $profile_userId_index from "./routes/profile/[userId]/index.tsx";
+import * as $profile_userId_ from "./routes/profile/[userId].tsx";
 import * as $profile_index from "./routes/profile/index.tsx";
 
 import type { Manifest } from "$fresh/server.ts";
@@ -23,7 +23,7 @@ const manifest = {
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/products.tsx": $products,
-    "./routes/profile/[userId]/index.tsx": $profile_userId_index,
+    "./routes/profile/[userId].tsx": $profile_userId_,
     "./routes/profile/index.tsx": $profile_index,
   },
   islands: {},
