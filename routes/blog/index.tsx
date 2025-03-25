@@ -1,4 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
+import BlogIsland from "../../islands/BlogIsland.tsx";
 
 const CategoryData = [
   {
@@ -48,7 +49,9 @@ function Blog(props: PageProps) {
   console.log(props.data);
   
   return (
-    <div>This is the Blog Page.</div>
+    <div>
+      <BlogIsland />
+    </div>
   );
 }
 

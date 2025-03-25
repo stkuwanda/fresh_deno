@@ -12,7 +12,7 @@ import * as $index from "./routes/index.tsx";
 import * as $products from "./routes/products.tsx";
 import * as $profile_userId_ from "./routes/profile/[userId].tsx";
 import * as $profile_index from "./routes/profile/index.tsx";
-
+import * as $BlogIsland from "./islands/BlogIsland.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -28,7 +28,9 @@ const manifest = {
     "./routes/profile/[userId].tsx": $profile_userId_,
     "./routes/profile/index.tsx": $profile_index,
   },
-  islands: {},
+  islands: {
+    "./islands/BlogIsland.tsx": $BlogIsland,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
